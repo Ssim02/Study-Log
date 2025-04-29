@@ -1,13 +1,6 @@
-max_value = 0
-a = 0
-b = 0
+# 조건을 활용한 리스트 내포
+array = ["사과", "자두", "초콜릿", "바나나", "체리"]
 
-for i in range(100 + 1) :
-    j = 100 - i
-    # 최댓값 구하기
-    if max_value < i * j :
-        max_value = i * j
-        # 최댓값이 될 때의 각 수를 저장시키기기
-        a = i
-        b = j
-print("최대가 되는 경우 : {} * {} = {}".format(a, b, max_value))
+output = [fruit for fruit in array if fruit != "초콜릿"]
+
+print(output)
