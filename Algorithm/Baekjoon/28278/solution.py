@@ -10,3 +10,4 @@ class Stack :
         self.items.append(val)
 
     def pop(self) : # 2번 명령
+        self.items.append(val)
